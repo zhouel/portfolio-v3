@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title><%- title %></title>
+
+<meta property="og:title" content="Elaine Zhou" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://elainez.co" />
+<meta property="og:image" content="http://elainez.co/images/elainecircle.png" />
+<meta property="og:description" content="I'm Elaine, a student pursuing a masters in Computer Science concentrating in Human-Computer Interaction. I'm fascinated by how modern products, technologies, and creative processes affect people, and vice versa." />
+
+<link rel='icon' type='image/png' href='favicon.png'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+
+<link rel='stylesheet' href='stylesheets/normalize.css' type='text/css'>
+<link rel='stylesheet' href='stylesheets/foundation.min.css' type='text/css'>
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='stylesheets/style.css' type='text/css'>
+</head>
+
+<body id='discoveroute'>
+
+<nav class='nav-roundslide'>
+	<ul class='show-for-medium-up hide-for-touch'>
+		<li>
+			<a class='dotstyle current' href='#home'>
+				<h1>Home</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#projects'>
+				<h1>Projects</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#about'>
+				<h1>About</h1>
+			</a>
+		</li>		
+	</ul>
+</nav>
+
+<div class='row case-study' id='discoveroute-page'>
+	<section>
+		<div class='large-11 large-centered columns'>
+			<div class='row'>
+				<div class='large-7 columns'>
+					<div class='main-content'>
+						<h3 class='title-underline'>discoveroute</h3>
+
+						<div class='proj-overview'>
+							<p><i>Technologies</i> : node.js, MongoDB, Bootstrap <br />
+							<i>Roles</i> : interface &amp; interaction design, front-end web development<br />
+							<a href='https://github.com/hwray/discoveroute'>https://github.com/hwray/discoveroute</a></p>
+
+							<p>
+								<%- project.content %>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class='large-4 columns'>
+					<div class='case-main-img center'>
+					<img src='images/drlogo.png' />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<footer>
+	<div class='row'>
+		<div class='center'>
+		 <p>Elaine Zhou • 2015</p>
+		</div>
+	</div>
+</footer>
+
+<script src='javascripts/vendor/jquery.js'></script>
+<script src='javascripts/foundation.min.js'></script>
+<script src='javascripts/script.js'></script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-47071245-2', 'auto');
+	ga('send', 'pageview');
+
+	$(document).foundation();
+
+	$("div").each(function () {
+        var color = $(this).css("background-color");
+        console.log(color);
+        if (color == "#00C9D0") {
+            $(this).css("background-color", "#ffc800");
+        }
+    });
+</script>
+
+</body>
+</html>

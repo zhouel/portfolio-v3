@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title><%- title %></title>
+
+<meta property="og:title" content="Elaine Zhou" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://elainez.co" />
+<meta property="og:image" content="http://elainez.co/images/elainecircle.png" />
+<meta property="og:description" content="I'm Elaine, a student pursuing a masters in Computer Science concentrating in Human-Computer Interaction. I'm fascinated by how modern products, technologies, and creative processes affect people, and vice versa." />
+
+<link rel='icon' type='image/png' href='favicon.png'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+
+<link rel='stylesheet' href='stylesheets/normalize.css' type='text/css'>
+<link rel='stylesheet' href='stylesheets/foundation.min.css' type='text/css'>
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='stylesheets/style.css' type='text/css'>
+</head>
+
+<body id='landing'>
+
+<nav class='nav-roundslide'>
+	<ul class='show-for-medium-up hide-for-touch'>
+		<li>
+			<a class='dotstyle current' href='#home'>
+				<h1>Home</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#projects'>
+				<h1>Projects</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#about'>
+				<h1>About</h1>
+			</a>
+		</li>		
+	</ul>
+</nav>
+
+<!-- ABOUT ME SECTION -->
+<section id='home'>
+	<div class='twinkle'></div>
+	<div class='section-wrapper'>
+		<div class='intro pull-down'>
+			<div class='logo-wrapper center'>
+				<img src='images/EZlogo.png' alt='personal logo'>
+			</div>
+			<div class='intro-text center'>
+				<h3>Hi, I'm Elaine</h3>
+				<p><i>@zhoufosho</i></p>
+			</div>
+			<div class='img-wrapper arrow center'>
+				<a href='#projects'><img src='images/arrow.png'></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class='clearfix'></div>
+
+<!-- PROJECTS SECTION -->
+<section id='projects'>
+	<div class='row'>
+		<div class='large-12 large-centered columns'>
+			<!-- <h3 class='section-title'>Projects</h3> -->
+			<ul class='tiles'>
+				<% for(var i=0; i<projects.length; i++) { %>
+					<% var project = projects[i] %>
+					<% if (i % 3 == 0) { %>
+					<div class='row tile-row'>
+						<li class='medium-7 large-8 columns tile major' id='<%- project.slug %>'>
+					<% } else {  %>
+						<li class='medium-5 large-4 columns tile minor' id='<%- project.slug %>'>
+					<% } %>
+							
+						<div class='tile-img'>
+							<div class='inner' style='background-image: url("<%- project.img %>")'></div>
+						</div>
+						<div class='tile-text'>
+							<div class='row'>
+								<% if(i % 3 == 0) { %>
+								<div class='medium-11 large-10 columns'>
+									<h4 class='title-underline'><%- project.name %></h4>
+									<div class='proj-content'><p><%- project.content %></p></div>
+								<% } else { %>
+								<div class='medium-11 large-11 columns'>
+									<h5 class='title-underline'><%- project.name %></h5>
+									<div class='proj-content'><p><%- project.content %></p></div>
+								<% } %>
+								</div>
+								<span class='more-triangle'>
+									<i class='fa fa-long-arrow-right fa-lg'></i>
+								</span>
+							</div>
+						</div>
+						</li>
+					<% if (i % 3 == 2) { %>
+					</div>
+					<% } %>
+				<% } %>
+			</ul>
+		</div>
+</div>
+</section>
+
+
+<!-- ABOUT ME SECTION -->
+<section id='about'>
+	<div class='row'>
+		<div class='small-12 medium-5 large-4 columns tile blurb'>
+			<div class='tile-img-light center'>
+				<img src='images/elainecircle.png' class='bio-img' alt='Elaine Zhou, headshot'>
+			</div>
+			<div class='tile-text center'>
+				<h4 class='title-underline'>Elaine Zhou</h4>
+				<ul class='centered-list'>
+					<li><p>Stanford, Computer Science '15</p></li>
+					<!-- <li><p>Software Engineer &amp; Designer</p></li> -->
+					<li><p><a href='mailto:elainez@cs.stanford.edu'>elainez@cs.stanford.edu</a></p></li>
+				</ul>
+				<ul class='social-media centered-inline-list'>
+					<li><a href='http://facebook.com/zhoufosho' target='_blank'><i class='fa fa-facebook'></i></a></li>
+					<li><a href='http://instagram.com/zhoufosho' target='_blank'><i class='fa fa-instagram'></i></a></li>
+					<li><a href='https://www.linkedin.com/in/elainexzhou' target='_blank'><i class='fa fa-linkedin'></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class='medium-7 large-8 columns tile about show-for-medium-up'>
+			<div class='tile-text'>
+				<h4 class='title-underline extra-bottom'>Hello there!</h4>
+				
+				<p class='text-justify'>
+					I'm Elaine, a student pursuing studying Computer Science concentrating in Human-Computer Interaction. I'm fascinated by how modern products, technologies, and creative processes affect people, and vice versa. <br /><br />
+
+					I'm drawn to ambitious, meaningful visions, my lifegoal is to produce a net positive impact on the world. Ultimately, I want to use what I’ve learned towards a career of consequence to help solve wicked problems and create products and experiences that enrich people's lives. <br /><br />
+
+					I love coffee, traveling, rooftops views, puzzles, popsicles, public transportation, animated films, and desserts (especially churros and chocolate-covered anything). <br /><br />
+
+					Gallup StrenghtsQuest Results: adaptability, input, ideation, learner, includer.
+				</p>
+				<div class='row'>
+					<div class='medium-offset-9 medium-3 columns'>
+						<div class='logo-wrapper'>
+							<img src='images/EZlogoBlackLarge.png' alt='personal logo'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div class='row'>
+		<div class='center'>
+		 <p>Elaine Zhou • 2015</p>
+		</div>
+	</div>
+</footer>
+
+<script src='javascripts/vendor/jquery.js'></script>
+<script src='javascripts/foundation.min.js'></script>
+<script src='javascripts/script.js'></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-47071245-2', 'auto');
+	ga('send', 'pageview');
+
+	$(document).foundation();
+</script>
+
+</body>
+</html>

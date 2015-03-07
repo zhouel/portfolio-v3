@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Halant:400,300' rel='stylesheet' type='text/css'>
+
+<link rel='stylesheet' href='stylesheets/foundation.min.css' type='text/css'>
+<link rel='stylesheet' href='stylesheets/style.css' type='text/css'>
+</head>
+
+<body>
+<div class='row'>
+
+	<div class="large-12 large-centered columns">
+		
+		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+		<li class="project-block">
+			<div class="project-text">
+				<h1>test</h1>
+				<p>
+
+				this is a paragraph.
+
+				</p>
+			</div>
+		</li>
+		</ul>
+	</div>
+
+</div>
+
+<script src="javascripts/vendor/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>
