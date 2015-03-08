@@ -13,6 +13,13 @@ body#discoveroute ::-webkit-selection { background-color: #ffc800; color: white;
 body#discoveroute .title-underline { border-bottom-color: #ffc800; }
 body#discoveroute .case-study a:hover { color: #ffc800; }
 
+body#smartcart ::selection { background-color: #2f6fb5; color: white; }
+body#smartcart ::-moz-selection { background-color: #2f6fb5; color: white; }
+body#smartcart ::-o-selection { background-color: #2f6fb5; color: white; }
+body#smartcart ::-webkit-selection { background-color: #2f6fb5; color: white; }
+body#smartcart .title-underline { border-bottom-color: #2f6fb5; }
+body#smartcart .case-study a:hover { color: #2f6fb5; }
+
 /*  BASE */
 body { font-family: 'Oxygen', sans-serif; background-color: #1c1c1c; height: 100%; width: 100%; }
 
@@ -24,17 +31,20 @@ p { font-weight: 100; font-size: .85rem; line-height: 1.6em; }
 
 footer { color: #696969; margin: 30px 0 15px; }
 
-footer.light { background-color: white; color: #696969; }
+footer .light { background-color: white; color: #696969; padding: .5em 0 1.5em; }
+footer .light hr { width: 60%; padding-bottom: 0.5em; }
 
 blockquote { border-left: 0; margin: 1.7em 10px 1.5em; padding: 0.5em 10px; width: 40%; text-align: center; margin-left: auto; margin-right: auto; }
 blockquote:before { color: #CCCCCC; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; margin-left: -0.7em; vertical-align: -0.4em; }
-blockquote footer { text-align: right; font-size: .85rem; font-style: italic; color: #CCCCCC; }
+blockquote footer { text-align: right; font-size: .85rem; font-style: italic; color: #CCCCCC; margin: 0; }
 blockquote p { display: inline; }
 
 /* UTILITES */
 .vertical-center { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
 .center { text-align: center; margin-left: auto; margin-right: auto; }
+
+.no-margin { margin: 0; }
 
 ul.centered-list { margin-left: 0; margin-top: 0.75rem; list-style-type: none; text-align: center; }
 ul.centered-list li { display: block; margin: 0 10px; }
@@ -150,6 +160,8 @@ h5.title-underline { padding-bottom: 0.6rem; margin-bottom: 0.8rem; }
 .social-media a:focus, .social-media a:hover { color: #00C9D0; }
 
 /* case studies */
+body.case-page { background-image: url("../images/starry1.png"); background-attachment: fixed; }
+
 .case-study { background-color: white; padding: 30px 0; }
 
 .case-study a { color: #1c1c1c; border-bottom: 1px solid #CCCCCC; }
@@ -164,7 +176,8 @@ h5.title-underline { padding-bottom: 0.6rem; margin-bottom: 0.8rem; }
 
 .case-section-title h5 { color: #CCCCCC; font-family: 'Oxygen', Arial, serif; font-weight: 300; letter-spacing: 0.15em; display: inline-block; }
 
-.case-section-content figure { margin: 3em 10px; }
+.wrapper { margin: 3em 10px; }
+
 .case-section-content figure img { margin-bottom: 0.5em; }
 .case-section-content figure figcaption { color: #696969; font-size: 0.8em; font-style: italic; }
 

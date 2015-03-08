@@ -55,14 +55,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-// from less to css
-app.use(require('less-middleware')(
-    __dirname + 'public/style/less', // source
-    { dest: __dirname + 'public/style/css' }, // options
-    {}, // parser
-    { compress: 'auto' } // complier
-));
-
 app.use(express.static(__dirname + '/public'));
 
 module.exports = app;

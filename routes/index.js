@@ -14,14 +14,19 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Elaine Zhou' , projects: projects});
 });
 
+var completed = [projects[0], projects[3]];
 
-// for (var i=0; i<projects.length; i++){
-	var project = projects[0];
+for (var i=0; i<completed.length; i++){
+	var project = completed[i];
 	var endpoint = '/' + project.slug;
+	renderPage(project);
+}
+
+function renderPage(project){
 	router.get(endpoint, function(req, res) {
 	  res.render(project.slug, {title: project.name, project: project});
 	});
-// }
+}
 
 
 module.exports = router;
