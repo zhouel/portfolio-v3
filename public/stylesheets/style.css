@@ -66,16 +66,10 @@ ul.centered-inline-list li { display: inline-block; margin: 0 10px; }
 
 hr.indent { display: inline-block; width: 1.5em; height: 0px; margin: 5px 0 5px 0; margin-right: 10px; border-width: 1.75px; }
 
-/*
-#projects .tile:hover{
-	cursor: pointer;
-}
+#projects .major:hover { cursor: pointer; }
 
-.tile:hover .more-triangle{
-	display: block;
-	opacity: 0.6;
-}
-*/
+.major:hover .more-triangle { display: block; opacity: 0.6; }
+
 .more-triangle i { margin-left: -40px; vertical-align: middle; color: white; padding-top: 60px; }
 
 .minor .more-triangle i { padding-top: 40px; margin-left: -30px; }
