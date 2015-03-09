@@ -10,6 +10,7 @@ body#discoveroute ::-o-selection { background-color: #ffc800; color: white; }
 body#discoveroute ::-webkit-selection { background-color: #ffc800; color: white; }
 body#discoveroute .title-underline { border-bottom-color: #ffc800; }
 body#discoveroute .case-study a:hover { color: #ffc800; }
+body#discoveroute .social-media a:focus, body#discoveroute .social-media a:hover { color: #ffc800; }
 
 body#smartcart ::selection { background-color: #2f6fb5; color: white; }
 body#smartcart ::-moz-selection { background-color: #2f6fb5; color: white; }
@@ -17,6 +18,7 @@ body#smartcart ::-o-selection { background-color: #2f6fb5; color: white; }
 body#smartcart ::-webkit-selection { background-color: #2f6fb5; color: white; }
 body#smartcart .title-underline { border-bottom-color: #2f6fb5; }
 body#smartcart .case-study a:hover { color: #2f6fb5; }
+body#smartcart .social-media a:focus, body#smartcart .social-media a:hover { color: #2f6fb5; }
 
 .about:before, .blurb:before { content: ''; display: inline-block; vertical-align: middle; height: 100%; width: .1px; }
 
@@ -28,6 +30,10 @@ h1, h2, h3, h4, h5 { font-family: 'Montserrat', Arial, serif; font-weight: 400; 
 h3 { letter-spacing: 0.085rem; }
 
 p { font-weight: 100; font-size: .85rem; line-height: 1.6em; }
+
+a { color: #1c1c1c; border-bottom: 1px solid #CCCCCC; }
+
+a:hover { color: #00C9D0; border-bottom: 1px solid #1c1c1c; }
 
 footer { color: #696969; margin: 30px 0 15px; }
 
@@ -146,30 +152,29 @@ ul.tiles { list-style: none; margin-left: 0px; }
 
 .about .logo-wrapper { margin-top: 1.75em; padding-right: 30px; }
 
-.social-media a { color: #1c1c1c; }
+.social-media a { color: #1c1c1c; border-bottom: 0px solid #CCCCCC; }
 
-.social-media a:focus, .social-media a:hover { color: #00C9D0; }
+.social-media a:focus, .social-media a:hover { color: #00C9D0; border-bottom: 0px solid #CCCCCC; }
 
 /* case studies */
 body.case-page { background-image: url("../images/starry1.png"); background-attachment: fixed; }
 
 .case-study { background-color: white; padding: 30px 0; }
 
-.case-study a { color: #1c1c1c; border-bottom: 1px solid #CCCCCC; }
-
-.case-study a:hover { color: #00C9D0; border-bottom: 1px solid #1c1c1c; }
-
 .case-title-img { text-align: center; margin-left: auto; margin-right: auto; margin: 3em 10px 0 10px; }
 
-@media only screen and (max-width: 480px) { .case-title-img { margin: -5em 0 0; } }
+.case-title-img-small { background-size: contain; background-repeat: no-repeat; background-position: center center; height: 7em; padding-right: 10px; }
+
+@media only screen and (max-width: 767px) { .case-title-img-small { height: 3em; } }
 .case-content .video-wrapper { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 3em 5em; }
-@media only screen and (max-width: 767px) { .case-content .video-wrapper { margin: 3em 0; } }
+@media only screen and (max-width: 767px) { .case-content figure { margin: 3em 0 !important; }
+  .case-content .video-wrapper { margin: 3em 0; } }
 .case-content .video-wrapper iframe, .case-content .video-wrapper object, .case-content .video-wrapper embed { position: absolute; top: 0; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100%; height: 100%; }
 .case-content .wrapper { margin: 3em 10px; }
-.case-content figure { text-align: center; margin-left: auto; margin-right: auto; margin: 3em 0; }
+.case-content figure { text-align: center; margin-left: auto; margin-right: auto; margin: 3em 5em; }
 .case-content figure img { margin-bottom: 0.5em; }
 .case-content figure figcaption { color: #696969; font-size: 0.8em; font-style: italic; }
-.case-content h5 { color: #CCCCCC; font-family: 'Oxygen', Arial, serif; font-weight: 300; letter-spacing: 0.15em; display: inline-block; }
+.case-content h5 { color: #CCCCCC; font-family: 'Oxygen', Arial, serif; font-weight: 300; letter-spacing: 0.15em; display: inline-block; margin-top: 1em; }
 
 /* project specifics */
 .tile-img { overflow: hidden; }
@@ -190,7 +195,7 @@ body.case-page { background-image: url("../images/starry1.png"); background-atta
 
 /* dot navigation */
 @media only screen and (max-width: 1174px) { nav a.dotstyle { display: none; } }
-nav ul { margin-left: 5px; position: fixed; z-index: 1000; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+nav .dot-nav { margin-left: 5px; position: fixed; z-index: 1000; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
 nav li { margin: 15px 0px; }
 

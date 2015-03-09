@@ -6,10 +6,10 @@
 <body id='smartcart' class='case-page'>
 
 <nav class='nav-roundslide'>
-	<ul class='show-for-medium-up hide-for-touch'>
+	<ul class='show-for-medium-up hide-for-touch dot-nav'>
 		<li>
-			<a class='dotstyle current' href='#needfinding'>
-				<h1>Needfinding</h1>
+			<a class='dotstyle current' href='#overview'>
+				<h1>Overview</h1>
 			</a>
 		</li>
 		<li>
@@ -29,25 +29,27 @@
 	<div class='large-11 large-centered columns'>
 		<div class='row'>
 			<section id='smartcart-brief'>
-				<div class='medium-8 columns'>
-					<h3 class='title-underline'>SmartCart</h3>
+				<div class='small-12 medium-8 columns'>
 					<div class='row'>
-						<div class='medium-12 small-8 columns'>
+						<div class='small-8 medium-12 columns'>
+							<h3 class='title-underline'>SmartCart</h3>
+						</div>
+						<div class='small-4 show-for-small-only columns case-title-img-small' style='background-image: url("images/smartcartNew.png")'>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='small-12 columns'>
 							<p>Winter 2013<br />
 							<i>Technologies</i> : Android, AutoCAD <br />
-							<i>Website</i> : <a href='http://smartcart247.weebly.com/'>http://smartcart247.weebly.com/</a></p>
-						</div>
-						<div class='small-4 show-for-small-only columns'>
-							<div class='case-title-img'>
-								<img src='images/smartcartNew.png' />
-						</div>
+							<i>Website</i> : <a href='http://smartcart247.weebly.com/'>http://smartcart247.weebly.com/</a> &nbsp;
+							<span class='social-media'><a href='https://github.com/cs247stanford/smartcart' target='_blank'>
+								<i class='fa fa-github'></i></a></i></span></p>
 						</div>
 					</div>
 					<div class='row'>
 						<div class='medium-12 columns'>
 						<p>
-							<%- project.content %>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							For many people, a weekly trip to the grocery store is a necessary evil. Stores are difficult to navigate, items are hard to find or forgotten, and waiting to check out is a pain. We set out to tackle two major pain points in the grocery shopping experience: <em>finding items</em> and <em>checking out</em>.
 						</p>
 						</div>
 					</div>
@@ -61,39 +63,45 @@
 		</div>
 		<div class='row'>
 			<div class='case-content large-12 columns'>
-				<section id='needfinding'>
-					<hr class='indent' /><h5>Needfinding</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
-
-					<blockquote>Lorem ipsum dolor. That is what.<footer>- she</footer></blockquote>
-
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
-				</section>
-
-				<section id='prototyping'>
-					<hr class='indent' /><h5>Prototyping</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
-
-					<figure>
-						<img src='images/discoverouteDisplays.png'>
-						<figcaption>caption - this is a screenshot.</figcaption>
-					</figure>
-
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
-				</section>
-
-				<section id='user-testing'>
-					<hr class='indent' /><h5>User Testing</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
+				<section id='overview'>
+					<hr class='indent' /><h5>Shop Smarter</h5>
+					<p>SmartCart guides shoppers through grocery stores. The android tablet and enclosure allowing buyers to scan items at their own pace and preference, accommodating different modes of shopping from predetermined lists to impulse buying. With SmartCart, there's no need for checkout lines - simply exit the store and confirm the final payment. </p>
 
 					<div class='video-wrapper'>
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/7QvktffdVp4" frameborder="0" allowfullscreen></iframe>
 					</div>
 
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
+				</section>
+
+				<section id='prototyping'>
+					<hr class='indent' /><h5>Prototyping</h5>
+					<p>Needfinding in this project began with talking with shoppers about supermarket frustrations, following their shopping habits, and talking with employees about self-checkout hassles and inefficiencies. After considering a number of <a href='http://smartcart247.weebly.com/prototyping.html'>prototypes</a>, we decided on a tablet app. 
+					</p>
+
+					<figure>
+						<img src='images/smartcart/007.png' />
+						<figcaption>initial mockup of adding items (Photoshop)</figcaption>
+					</figure>
+
+				</section>
+
+				<section id='user-testing'>
+					<hr class='indent' /><h5>User Testing</h5>
+					<p>From <a href='http://smartcart247.weebly.com/user-testing.html'>user testing</a>, several interface issues were highlighted, but most prominent was the ambiguity found in checking out. Shoppers were reminded of an online experience, instead of a physical store. We added additional dialogues and more obvious actions to simplify the checkout process. </p>
+
+					<figure>
+						<img src='images/smartcart/smartcartHiDef.jpg'>
+						<figcaption>high-fidelity mockup of list &amp; map view</figcaption>
+					</figure>
+
+					<p>Aside from <a href='http://smartcart247.weebly.com/functional-2.html'>new features</a> to add to the app, user testing also revealed that shoppers found it very difficult to use the SmartCart application in coordination with the physical cart. The tablet seemed more like a peripheral accessory than an integrated shopping cart helper, so we designed a hardware enclosure to ease use and accessibility of the touchscreen.</p>
+
+					<figure>
+						<img src='images/smartcart/test2.jpg'>
+						<img src='images/smartcart/case2.jpg'>
+						<figcaption>iterations of acrylic hardware enclosures</figcaption>
+					</figure>
+
 				</section>
 			</div>
 		</div>
