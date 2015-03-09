@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Elaine Zhou' , projects: projects});
 });
 
-var completed = [projects[0], projects[3]];
+var completed = [projects[0], projects[1], projects[3]];
 
 for (var i=0; i<completed.length; i++){
 	var project = completed[i];

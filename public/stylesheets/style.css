@@ -20,6 +20,14 @@ body#smartcart .title-underline { border-bottom-color: #2f6fb5; }
 body#smartcart .case-study a:hover { color: #2f6fb5; }
 body#smartcart a:focus i, body#smartcart a:hover i { color: #2f6fb5; }
 
+body#dais ::selection { background-color: #146c6e; color: white; }
+body#dais ::-moz-selection { background-color: #146c6e; color: white; }
+body#dais ::-o-selection { background-color: #146c6e; color: white; }
+body#dais ::-webkit-selection { background-color: #146c6e; color: white; }
+body#dais .title-underline { border-bottom-color: #146c6e; }
+body#dais .case-study a:hover { color: #146c6e; }
+body#dais a:focus i, body#dais a:hover i { color: #146c6e; }
+
 /*  BASE */
 body { font-family: 'Oxygen', sans-serif; background-color: #1c1c1c; height: 100%; width: 100%; }
 
@@ -34,11 +42,13 @@ footer { color: #696969; margin: 30px 0 15px; }
 footer .light { background-color: white; color: #696969; padding: .5em 0 1.5em; }
 footer .light hr { width: 60%; padding-bottom: 0.5em; }
 
-blockquote { border-left: 0; margin: 2.7em 10px 2.5em; padding: 0.5em 10px; width: 40%; text-align: center; margin-left: auto; margin-right: auto; }
+blockquote { border-left: 0; margin: 2.7em 5em 2.5em; padding: 0.5em 10px; width: 40%; text-align: center; margin-left: auto; margin-right: auto; }
 blockquote:before { color: #CCCCCC; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; margin-left: -0.7em; vertical-align: -0.4em; }
 blockquote footer { text-align: right; font-size: .85rem; font-style: italic; color: #CCCCCC; margin: 0; }
 blockquote p { display: inline; }
 
+@media only screen and (max-width: 767px) { blockquote { margin: 2.7em 0em 2.5em; width: 100%; }
+  blockquote:before { margin-right: 0.1em; margin-left: -0.3em; } }
 /* UTILITES */
 .vertical-center { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
@@ -66,6 +76,7 @@ ul.centered-inline-list li { display: inline-block; margin: 0 10px; }
 
 hr.indent { display: inline-block; width: 1.5em; height: 0px; margin: 5px 0 5px 0; margin-right: 10px; border-width: 1.75px; }
 
+/* TODO: change to .tile instead of of .major */
 #projects .major:hover { cursor: pointer; }
 
 .major:hover .more-triangle { display: block; opacity: 0.6; }
@@ -97,8 +108,6 @@ ul.tiles { list-style: none; margin-left: 0px; }
 .major .tile-img { height: 28em; }
 
 .minor .tile-img { height: 11.45em; }
-
-.major .tile-img img { width: auto; bottom: 0; }
 
 #home { height: 100%; background-image: url("../images/starry1.png"); /*	background-image: -o-linear-gradient(to bottom, rgba(18, 18, 18, 0) 10%, rgba(18, 18, 18, 0.8) 68%), url('../images/starry1.png');
 	background-image: -webkit-linear-gradient(to bottom, rgba(18, 18, 18, 0) 10%, rgba(18, 18, 18, 0.8) 68%), url('../images/starry1.png');
@@ -152,6 +161,7 @@ body.case-page { background-image: url("../images/starry1.png"); background-atta
 .case-study .social-media a:focus, .case-study .social-media a:hover { border-bottom-width: 0px; }
 
 .case-title-img { text-align: center; margin-left: auto; margin-right: auto; margin: 3em 10px 0 10px; }
+.case-title-img img { max-height: 10em; }
 
 .case-title-img-small { background-size: contain; background-repeat: no-repeat; background-position: center center; height: 7em; padding-right: 10px; }
 

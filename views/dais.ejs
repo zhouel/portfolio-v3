@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<% include templates/head %>
+
+<body id='dais' class='case-page'>
+
+<nav class='nav-roundslide'>
+	<ul class='show-for-medium-up hide-for-touch dot-nav'>
+		<li>
+			<a class='dotstyle current' href='#overview'>
+				<h1>Overview</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#needfinding'>
+				<h1>Needfinding</h1>
+			</a>
+		</li>
+		<li>
+			<a class='dotstyle' href='#glass'>
+				<h1>Glass</h1>
+			</a>
+		</li>		
+		<li>
+			<a class='dotstyle' href='#web'>
+				<h1>Web App</h1>
+			</a>
+		</li>		
+	</ul>
+</nav>
+
+<div class='row case-study' id='dais-page'>
+	<div class='large-11 large-centered columns'>
+		<div class='row'>
+			<section id='dais-brief'>
+				<div class='small-12 medium-8 columns'>
+					<div class='row'>
+						<div class='small-8 medium-12 columns'>
+							<h3 class='title-underline'>Dais Glass</h3>
+						</div>
+						<div class='small-4 show-for-small-only columns case-title-img-small' style='background-image: url("images/dais/podium.png")'>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='small-12 columns'>
+							<p>
+							Winter 2013 <br />
+							<em>Technologies</em> : Android, Glass GDK, HTML, CSS, Javascript <br />
+							<em>Website</em> : <a href='http://daisglass.com/'>http://daisglass.com/</a> &nbsp;
+							<span class='social-media'><a href='https://github.com/hwray/dais/tree/gh-pages' target='_blank'>
+								<i class='fa fa-github'></i></a></span>
+							</p>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='medium-12 columns'>
+						<p>
+							Presentations are a crucial form of communicating ideas in the modern world. However, many presentation aids serve as a crutch at best and a distraction at worst, focusing on making the presenter’s notes more accessible or  slide changes easier. Dais aims to help non-professional oral presenters to receive small amounts of <em>immediate and undisturbing feedback</em> and then <em>later aggregate</em> details of their performances.
+						</p>
+						</div>
+					</div>
+				</div>
+				<div class='medium-4 hide-for-small-only columns'>
+					<div class='case-title-img'>
+						<img src='images/dais/podium.png' />
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class='row'>
+			<div class='case-content large-12 columns'>
+				<section id='overview'>
+					<hr class='indent' /><h5>Present Better</h5>
+ 
+					<p>Dais is composed of two parts: a live presentation aid on Google Glass and a post-presentation analytics web app. Glass gives instanteous feedback on visual spread and speaking volume, and the web platform offers aggregate information. The ultimate goal of Dais is to reinforce good presentation techniques and turn these behaviors into intuitive habits, eliminating the need to rely on Dais or other external aids while presenting. </p>
+
+					<div class='video-wrapper'>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/x7TjLtVKj3k" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+				</section>
+
+				<section id='needfinding'>
+					<hr class='indent' /><h5>Needfinding</h5>
+					<p>We observed and talked with novice speakers and interviewed two professional oral communicator lecturers - <a href='https://www.linkedin.com/pub/matt-vassar/28/196/798'>Matt Vassar</a> and <a href='http://vpuewh-public.stanford.edu/viewprofile.jsp?sunetid=sohui&usetype=P&userid=PWR'>Sohui Lee</a>. We learned one of the biggest problems students have is maintaining steady eye gaze and vocal variation. Video recording, the most common debugging method, is typically ineffective due to its awkwardness. </p>
+
+					<blockquote>Time and sound [are] so warped when you’re presenting. Ten minutes can feel like forever! <footer>- Dr. Sohui Lee</footer></blockquote>
+
+					<p>Conversations with and observations of novice speakers surfaced further issues. When told to pay attention to a particular presentation aspect, students either briefly correct the feature or are thrown off their presentation entirely. Immediate feedback is useful, but only in small doses. From this exploration, narrowed our problem space: non-professional oral presenters need a way to receive small amounts of immediate and intimate feedback and then later analyze details of their performances. 
+					</p>
+
+				</section>
+
+				<section id='glass'>
+					<hr class='indent' /><h5>Google Glass Prototyping</h5>
+					<p>We decided to focus on two main pillars of good presentations: <em>balanced visual spread</em> and <em>consistent speaking volume</em>. We could then utilize the inherent strengths of wearables: the ability to analyze a constant stream of real-world sensor data to interpret and classify user behaviors.  On the flipside, this proved to be an interaction challenges - providing the right amount of information at the right time in microinteractions.
+					</p>
+
+					<p>By taking initial reference points from the accelerometer and microphone, Dais monitors where the user is looking and their volume. It then provides immediate feedback on eye-contact spread and volume. For example, if a user spends a disproportionate large amount of time looking at audience members to his/her left, Dais displays a subtle suggestion to look elsewhere. If the user looks far out of the range of the audience, Dais assumes the user has turned their head away from the audience to read off their own slides telling the user to face forward. We prototyped some screens for immediate visual and aural feedback. 
+					</p>
+					<figure>
+						<img src='images/dais/directional.png' />
+						<img src='images/dais/spatial.png' />
+						<figcaption>Glass mockups of directional (left) and spatial (right) feedback cues</figcaption>
+					</figure>
+
+					<p>We also prototyped some visualizations summarizing an entire presentation - heat map of head position to model visual spread and a line graph charting the progression of the speaker’s volume. However, it was immediately clear from user feedback that this information was too dense and unnecessary for Glass' intended use case.
+					</p>
+
+					<figure>
+						<!-- <img src='images/dais/glassAural.png' /> -->
+						<img src='images/dais/glassVisual.png' />
+						<figcaption>incomprehensible presentation analytics on Glass</figcaption>
+					</figure>
+
+				</section>
+
+				<section id='web'>
+					<hr class='indent' /><h5>Web App Component</h5>
+					<p>Taking these insights into account, we built a real-time app platform on which the presenter can view important metrics from any previously given presentationa. Since the goal of post-presentation evaluation is pinpointing and correcting errors made during the presentation, the analytics were designed with the intention of highlighting errors made. The heat map highlights the user's tendency to stare at any single point, and the volume line graph indicates the user's volume relative to a desired speaking level. The web app also aggregate all presentations over time in one dashboard.
+					</p>
+
+					<figure>
+						<img src='images/dais/webapp.png' />
+						<figcaption>web app displaying post-presentation analytics</figcaption>
+					</figure>
+
+					<p>
+					</p>
+
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class='row'>
+	<div class='large-12 large-centered columns light center'>
+		<hr class='center'></hr>
+		 <p>Elaine Zhou • 2015</p>
+	</div>
+</footer>
+
+<% include templates/scripts %>
+
+</body>
+</html>
