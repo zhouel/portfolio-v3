@@ -40,16 +40,17 @@
 					<div class='row'>
 						<div class='small-12 columns'>
 							<p>Winter 2014<br />
-							<i>Technologies</i> : node.js, MongoDB, Bootstrap <br />
-							<i>Website</i> : <a href='http://discoveroute.com/'>http://discoveroute.com/</a> &nbsp;
+							<em>Technologies</em> : node.js, MongoDB, Bootstrap <br />
+							<em>Website</em> : <a href='http://discoveroute.com/'>http://discoveroute.com/</a> &nbsp;
 							<span class='social-media'><a href='https://github.com/hwray/discoveroute' target='_blank'>
-								<i class='fa fa-github'></i></a></i></span></p>
+								<i class='fa fa-github'></i></a></span>
+							</p>
 						</div>
 					</div>
 					<div class='row'>
 						<div class='medium-12 columns'>
 						<p>
-							For many people, a weekly trip to the grocery store is a necessary evil. Stores are difficult to navigate, items are hard to find or forgotten, and waiting to check out is a pain. We set out to tackle two major pain points in the grocery shopping experience: <em>finding items</em> and <em>checking out</em>.
+							As citizens of the smartphone era, we use our mobile maps to get everywhere. However, traveling from point A to point B doesn't take in account the needs of busy people with multiple stops or adventurers with time to spare. We set out to help people with two goals: find new, interesting <em>places along a path</em> and with <em>time efficiency</em>.
 						</p>
 						</div>
 					</div>
@@ -63,40 +64,61 @@
 		</div>
 		<div class='row'>
 			<div class='case-content large-12 columns'>
+				<section id='overview'>
+					<hr class='indent' /><h5>Find new places by old spaces. </h5>
+					<p>Discoveroute provides time- and route-constrainted local business search. Whether you need a coffee rush while on your way to work, or you and a friend want to meet halfway at a bar or restaurant, the mobile web app shows the visual mapping of these places and ensures you make your final destination on time.
+					</p>
+
+					<figure>
+						<img src='images/discoveroute/discoverouteDisplays.png'>
+					</figure>
+
+				</section>
 				<section id='needfinding'>
-					<hr class='indent' /><h5>Needfinding</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
+					<hr class='indent' /><h5>Needfinding </h5>
+					<p>Oftentimes, traveling ends up more about getting to the final destination than about the actual journey. While observing people planning trips, we learned that finding new or convenient places is a major hassle. Current maps don't take into account areas between routes or extraneous travel time.
+					</p>
 
-					<blockquote>Lorem ipsum dolor. That is what.<footer>- she</footer></blockquote>
+					<blockquote cite='https://www.facebook.com/discoveroute'>To plan my outings, [I want to find] cool things to check out or places to eat on my way to an event to make the most of my travel time. <footer>- Vivian Lam</footer></blockquote>
 
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
 				</section>
 
 				<section id='prototyping'>
 					<hr class='indent' /><h5>Prototyping</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
+					<p>The process began with a <a href='https://docs.google.com/document/d/11eNJOrABNe7P4Xs9IKNGPyz6dUSsuQMSZ5wvuiUBW80/edit?usp=sharing'>few</a> <a href='https://docs.google.com/document/d/1z_q_SwTqsinrGJ1TNQXWabihAjNLDqWnKBmyyFbn070/edit?usp=sharing'>different</a> <a href='https://docs.google.com/document/d/1fAIzg-hUR5z3vHOmQqJj79KRR4lu2jXnr57k1eWL4YY/edit?usp=sharing'>ideas</a> prototyped in parallel. By starting with paper prototypes, we were able to conduct '<a href='http://en.wikipedia.org/wiki/Wizard_of_Oz_experiment'>wizard of oz experiments</a>' to see which components met the users' needs and which didn't.
+					</p>
 
 					<figure>
-						<img src='images/drPaperProto.png'>
-						<figcaption>caption - this is a screenshot.</figcaption>
+						<img src='images/discoveroute/drPaperProto.png'>
+						<figcaption>one of the heuristic walkthrough prototypes</figcaption>
 					</figure>
 
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
+					<p>One of the main takeaways from the heuristic walkthroughs was that the navigation needed much more refinement. We iterated on potential flows with rough UI mockups. Throughout, our focus was for the interaction to be straightforward but also allow for non-linearity. We tested these models, and once we finalized the navigation, created high-fidelity mockups.</p>
+
+					<figure>
+						<img src='images/discoveroute/drIterations.png'>
+						<figcaption>various iterations of navigation and interaction</figcaption>
+					</figure>
+
+					<figure>
+						<img src='images/discoveroute/drHiFi.png'>
+						<figcaption>high fidelity mockups</figcaption>
+					</figure>
+
 				</section>
 
 				<section id='user-testing'>
 					<hr class='indent' /><h5>User Testing</h5>
-					<p>User Testing revealed a few usability issues that were fixed for the final version.
-					One problem was confusion in selecting categories. The original version was a chromatic display that showed a thin white border around a selected category. This was too subtle a response.</p>
+					<p>After multiple iterations of a functional product, we began <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#bookmark=id.rizcytbtr6h'>user testing</a> with a combination of cognitive walkthroughs and online tests.</p>
+
+					<p>One major issue we investigated was in selecting categories. It was unclear that multiple categories could be selected, and very few people attempted to. In <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#bookmark=id.c536mr1lj6zh'>redesigning</a> this part of the interaction, we narrowed it down to two to run an A/B test on. After running an <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#'>online A/B test</a>, we confirmed the data results with cognitive walkthroughs. The monochrome version was incorporated into the final design, since it had clearer actions and resulted in less button mashing.
+					</p>
 
 					<figure>
 						<img src='images/discoveroute/drABTest.png'>
-						<figcaption>caption - this is a screenshot.</figcaption>
+						<figcaption>A/B testing with original (left) and monochrome redesign (right)</figcaption>
 					</figure>
 
-					<p>After running an A/B test through Google Analytics, number of clicks on a monochromatic redesign versus the original were measured. The monochrome version had clearer actions and resulted in less button mashing. </p>
 				</section>
 			</div>
 		</div>
