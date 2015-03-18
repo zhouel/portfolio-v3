@@ -43,8 +43,8 @@ footer .light { background-color: white; color: #696969; padding: .5em 0 1.5em; 
 footer .light hr { width: 60%; padding-bottom: 0.5em; }
 
 blockquote { border-left: 0; margin: 2.7em 5em 2.5em; padding: 0.5em 10px; width: 40%; text-align: center; margin-left: auto; margin-right: auto; }
-blockquote:before { color: #CCCCCC; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; margin-left: -0.7em; vertical-align: -0.4em; }
-blockquote footer { text-align: right; font-size: .85rem; font-style: italic; color: #CCCCCC; margin: 0; }
+blockquote:before { color: #aaa; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; margin-left: -0.7em; vertical-align: -0.4em; }
+blockquote footer { text-align: right; font-size: .85rem; font-style: italic; color: #aaa; margin: 0; }
 blockquote p { display: inline; }
 
 @media only screen and (max-width: 750px) { blockquote { margin: 2.7em 0em 2.5em; width: 100%; }
@@ -178,7 +178,7 @@ body.case-page { background-image: url("../images/starry1.png"); background-atta
 .case-content figure { text-align: center; margin-left: auto; margin-right: auto; margin: 3em 5em; }
 .case-content figure img { margin-bottom: 0.5em; }
 .case-content figure figcaption { color: #696969; font-size: 0.8em; font-style: italic; }
-.case-content h5 { color: #CCCCCC; font-family: 'Oxygen', Arial, serif; font-weight: 300; letter-spacing: 0.15em; display: inline-block; margin-top: 1em; }
+.case-content h5 { color: #aaa; font-family: 'Oxygen', Arial, serif; font-weight: 300; letter-spacing: 0.15em; display: inline-block; margin-top: 1em; }
 
 /* project specifics */
 .tile-img { overflow: hidden; }
