@@ -28,6 +28,11 @@ body#dais .title-underline { border-bottom-color: #589a93; }
 body#dais .case-study a:hover { color: #589a93; }
 body#dais a:focus i, body#dais a:hover i { color: #589a93; }
 
+body#respiration ::selection { background-color: #00C9D0; color: white; }
+body#respiration ::-moz-selection { background-color: #00C9D0; color: white; }
+body#respiration ::-o-selection { background-color: #00C9D0; color: white; }
+body#respiration ::-webkit-selection { background-color: #00C9D0; color: white; }
+
 body#sixdegree ::selection { background-color: #010425; color: white; }
 body#sixdegree ::-moz-selection { background-color: #010425; color: white; }
 body#sixdegree ::-o-selection { background-color: #010425; color: white; }
@@ -179,6 +184,7 @@ body.case-page { background-image: url("../images/starry1.png"); background-atta
 
 @media only screen and (max-width: 750px) { .case-title-img-small { height: 3em; } }
 .case-content .video-wrapper { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin: 3em 5em; }
+.case-content .video-wrapper figcaption { color: #696969; font-size: 0.8em; font-style: italic; }
 @media only screen and (max-width: 750px) { .case-content figure { margin: 3em 0 !important; }
   .case-content .video-wrapper { margin: 3em 0; } }
 .case-content .video-wrapper iframe, .case-content .video-wrapper object, .case-content .video-wrapper embed { position: absolute; top: 0; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100%; height: 100%; }
@@ -205,7 +211,7 @@ body.case-page { background-image: url("../images/starry1.png"); background-atta
 #respiration .tile-img .inner { background-size: auto 100%; }
 
 /* dot navigation */
-@media only screen and (max-width: 1174px) { nav a.dotstyle { display: none; } }
+@media only screen and (max-width: 1174px) { nav { display: none !important; } }
 nav ul { line-height: 1.6; }
 
 nav .dot-nav { margin-left: 5px; position: fixed; z-index: 1000; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
@@ -218,11 +224,19 @@ nav a.dotstyle { left: 0; }
 
 nav a.current { background: #fff; }
 
-.nav-roundslide a { margin: 0 15px; position: absolute; width: 10px; height: 10px; border-radius: 20px; background: #696969; -webkit-transition: width 0.3s, background-color 0.3s, padding 0.3s; transition: width 0.3s, background-color 0.3s, padding 0.3s; }
+.nav-roundslide a { margin: 0 15px; position: absolute; background: #696969; -webkit-transition: width 0.3s, background-color 0.3s, padding 0.3s; transition: width 0.3s, background-color 0.3s, padding 0.3s; height: 15px; border-radius: 20px; }
+
+.nav-roundslide a.dotstyle { border-radius: 20px; width: 10px; height: 10px; }
+
+.back { position: fixed; left: 0px; top: 15px; }
+
+.back a { background-color: transparent; color: #aaa; line-height: 12px; padding: 10px 0 20px; }
 
 .nav-roundslide h1 { position: absolute; top: 0; margin: 0; color: #1c1c1c; text-transform: uppercase; white-space: nowrap; letter-spacing: 1px; font-weight: 400; font-size: 0.75em; line-height: 2.7em; display: none; -webkit-transition: display 0.3s, -webkit-transform 0.3s; transition: display 0.3s, transform 0.3s; }
 
-.nav-roundslide a.dotstyle h1 { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.nav-roundslide a h1 { line-height: 30px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.nav-roundslide .back a:hover { padding: 10px 0 20px 5px; }
 
 .nav-roundslide a:hover { padding: 15px; width: 130px; background: #fff; }
 

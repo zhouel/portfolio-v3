@@ -10,7 +10,7 @@ function scrollToSection(){
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     var tolerance = 100;
-    $('nav a').each(function () {
+    $('nav a.dotstyle').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr('href'));
         if (refElement.position().top - tolerance <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
