@@ -4,6 +4,14 @@ body#landing ::-moz-selection { background-color: #00C9D0; color: white; }
 body#landing ::-o-selection { background-color: #00C9D0; color: white; }
 body#landing ::-webkit-selection { background-color: #00C9D0; color: white; }
 
+body#bdp ::selection { background-color: #00892f; color: white; }
+body#bdp ::-moz-selection { background-color: #00892f; color: white; }
+body#bdp ::-o-selection { background-color: #00892f; color: white; }
+body#bdp ::-webkit-selection { background-color: #00892f; color: white; }
+body#bdp .title-underline { border-bottom-color: #00892f; }
+body#bdp .case-study a:hover { color: #00892f; }
+body#bdp a:focus i, body#bdp a:hover i { color: #00892f; }
+
 body#discoveroute ::selection { background-color: #ffc800; color: white; }
 body#discoveroute ::-moz-selection { background-color: #ffc800; color: white; }
 body#discoveroute ::-o-selection { background-color: #ffc800; color: white; }
@@ -89,10 +97,9 @@ ul.centered-inline-list li { display: inline-block; margin: 0 10px; }
 
 hr.indent { display: inline-block; width: 1.5em; height: 0px; margin: 5px 0 5px 0; margin-right: 10px; border-width: 1.75px; }
 
-/* TODO: change to .tile instead of of .major */
-#projects .major:hover { cursor: pointer; }
+#projects .tile:hover { cursor: pointer; }
 
-.major:hover .more-triangle { display: block; opacity: 0.6; }
+.tile:hover .more-triangle { display: block; opacity: 0.6; }
 
 .more-triangle i { margin-left: -40px; vertical-align: middle; color: white; padding-top: 60px; }
 

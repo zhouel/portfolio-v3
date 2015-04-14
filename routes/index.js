@@ -14,10 +14,8 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Elaine Zhou' , projects: projects});
 });
 
-var completed = [projects[0], projects[1], projects[3], projects[4], projects[5]];
-
-for (var i=0; i<completed.length; i++){
-	var project = completed[i];
+for (var i=0; i<projects.length; i++){
+	var project = projects[i];
 	var endpoint = '/' + project.slug;
 	renderPage(project);
 }
