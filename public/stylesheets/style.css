@@ -224,7 +224,7 @@ nav a.dotstyle { left: 0; }
 
 nav a.current { background: #fff; }
 
-.nav-roundslide a { margin: 0 15px; position: absolute; background: #696969; -webkit-transition: width 0.3s, background-color 0.3s, padding 0.3s; transition: width 0.3s, background-color 0.3s, padding 0.3s; height: 15px; border-radius: 20px; }
+.nav-roundslide a { margin: 0 15px; position: absolute; background: #696969; -webkit-transition: width 0.3s, background-color 0.3s, padding 0.3s, box-shadow 0.3s; transition: width 0.3s, background-color 0.3s, padding 0.3s, box-shadow 0.3s; height: 15px; border-radius: 20px; }
 
 .nav-roundslide a.dotstyle { border-radius: 20px; width: 10px; height: 10px; }
 
@@ -238,6 +238,6 @@ nav a.current { background: #fff; }
 
 .nav-roundslide .back a:hover { padding: 10px 0 20px 5px; }
 
-.nav-roundslide a:hover { padding: 15px; width: 130px; background: #fff; }
+.nav-roundslide a:hover { padding: 15px; width: 130px; background: #fff; box-shadow: 0px 1px 1px 0px #696969; }
 
 .nav-roundslide a:hover h1 { display: inline; -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }

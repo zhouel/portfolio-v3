@@ -22,6 +22,17 @@ function aboutMargin(event){
   $('#about > .row').css('padding-top', topMargin + 'px');
 }
 
+$('#projects .tile').click(function(e) {
+  e.preventDefault(); 
+  var slug = this.id;
+  $('body').fadeOut(1500, newpage(slug));
+});
+
+function newpage(slug) {
+    window.location = slug;
+}
+
+
 $(document).on('ready', function(){
 
   $('.arrow').find('a').click(scrollToSection);

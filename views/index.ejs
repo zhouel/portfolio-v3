@@ -56,9 +56,9 @@
 					<% var project = projects[i] %>
 					<% if (i % 3 == 0) { %>
 					<div class='row tile-row'>
-						<li class='medium-7 large-8 columns tile major' id='<%- project.slug %>' onclick="window.location='<%- project.slug %>';">
+						<li class='medium-7 large-8 columns tile major' id='<%- project.slug %>' >
 					<% } else {  %>
-						<li class='medium-5 large-4 columns tile minor' id='<%- project.slug %>'>
+						<li class='medium-5 large-4 columns tile minor' id='<%- project.slug %>' >
 					<% } %>
 							<div class='tile-img'>
 								<div class='inner' style='background-image: url("<%- project.img %>")'></div>
