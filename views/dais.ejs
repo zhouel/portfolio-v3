@@ -86,26 +86,24 @@
 
 				<section id='needfinding'>
 					<hr class='indent' /><h5>Needfinding</h5>
-					<p>We observed and talked with novice speakers and interviewed two professional oral communicator lecturers - <a href='https://www.linkedin.com/pub/matt-vassar/28/196/798'>Matt Vassar</a> and <a href='http://vpuewh-public.stanford.edu/viewprofile.jsp?sunetid=sohui&usetype=P&userid=PWR'>Sohui Lee</a>. We learned one of the biggest problems students have is maintaining steady eye gaze and vocal variation. Video recording, the most common debugging method, is typically ineffective due to its awkwardness. </p>
+					<p>We observed and talked with novice speakers and interviewed two professional oral communicator lecturers - <a href='https://www.linkedin.com/pub/matt-vassar/28/196/798'>Matt Vassar</a> and <a href='http://vpuewh-public.stanford.edu/viewprofile.jsp?sunetid=sohui&usetype=P&userid=PWR'>Sohui Lee</a>. Conversations with and observations of novice speakers surfaced that too much immediate feedback is overwhelming. Video recording, the most common presentation debugging method, is typically ineffective due to its awkwardness. Here, we narrowed our problem space: non-professional oral presenters need a way to receive small amounts of immediate and intimate feedback and then later analyze details of their performances.</p>
 
 					<blockquote>Time and sound [are] so warped when you’re presenting. Ten minutes can feel like forever! <footer>- Dr. Sohui Lee</footer></blockquote>
 
-					<p>Conversations with and observations of novice speakers surfaced further issues. When told to pay attention to a particular presentation aspect, students either briefly correct the feature or are thrown off their presentation entirely. Immediate feedback is useful, but only in small doses. From this exploration, narrowed our problem space: non-professional oral presenters need a way to receive small amounts of immediate and intimate feedback and then later analyze details of their performances. 
+					<p>We decided to focus on two main pillars of good presentations: <em>balanced visual spread</em> and <em>consistent speaking volume</em>. We could then utilize the inherent strengths of wearables: the ability to analyze a constant stream of real-world sensor data to interpret and classify user behaviors.  On the flipside, this proved to be an interaction challenges - providing the right amount of information at the right time in microinteractions.
 					</p>
 
 				</section>
 
 				<section id='glass'>
 					<hr class='indent' /><h5>Google Glass Prototyping</h5>
-					<p>We decided to focus on two main pillars of good presentations: <em>balanced visual spread</em> and <em>consistent speaking volume</em>. We could then utilize the inherent strengths of wearables: the ability to analyze a constant stream of real-world sensor data to interpret and classify user behaviors.  On the flipside, this proved to be an interaction challenges - providing the right amount of information at the right time in microinteractions.
-					</p>
 
 					<p>By taking initial reference points from the accelerometer and microphone, Dais monitors where the user is looking and their volume. It then provides immediate feedback on eye-contact spread and volume. For example, if a user spends a disproportionate large amount of time looking at audience members to his/her left, Dais displays a subtle suggestion to look elsewhere. If the user looks far out of the range of the audience, Dais assumes the user has turned their head away from the audience to read off their own slides telling the user to face forward. We prototyped some screens for immediate visual and aural feedback. 
 					</p>
 					<figure>
-						<img src='images/dais/directional.png' />
-						<img src='images/dais/spatial.png' />
-						<figcaption>Glass mockups of directional (left) and spatial (right) feedback cues</figcaption>
+						<img src='images/dais/directionalView.png' />
+						<img src='images/dais/spatialView.png' />
+						<figcaption>Glass mockups of directional (top) and spatial (bottom) feedback cues</figcaption>
 					</figure>
 
 					<p>We also prototyped some visualizations summarizing an entire presentation - heat map of head position to model visual spread and a line graph charting the progression of the speaker’s volume. However, it was immediately clear from user feedback that this information was too dense and unnecessary for Glass' intended use case.
