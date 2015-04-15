@@ -22,7 +22,7 @@ function aboutMargin(event){
   $('#about > .row').css('padding-top', topMargin + 'px');
 }
 
-$('#projects .tile').click(function(e) {
+$('#projects .tiles .tile').click(function(e) {
   e.preventDefault(); 
   var slug = this.id;
   $('body').fadeOut(1500, newpage(slug));
