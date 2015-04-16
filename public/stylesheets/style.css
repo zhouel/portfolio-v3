@@ -123,7 +123,7 @@ ul.tiles { list-style: none; margin-left: 0px; }
 
 .tile-img { background-color: #F7F7F7; height: auto; }
 
-.tile-img-light { background-color: white; margin: 1em 0 1.75em; }
+.tile-img-light { background-color: white; margin: 1em 0 1.7em; }
 
 .tile-text { padding: 1.5em 2.2em 2.2em; margin: 0 15px; background-color: white; }
 .tile-text p { margin-bottom: 0; }
@@ -176,7 +176,9 @@ ul.tiles { list-style: none; margin-left: 0px; }
 #about { height: 100%; padding: 0; background-image: url("../images/starry1.png"); }
 
 @media only screen and (max-width: 640px) { #about { height: auto; padding-bottom: 30px; } }
-.about .logo-wrapper { margin-top: 1.75em; padding-right: 30px; }
+.about .logo-wrapper { margin-top: 1.7em; }
+
+.logo-wrapper img { height: 100px; width: auto; margin-right: 30px; }
 
 a i { color: #1c1c1c; }
 
