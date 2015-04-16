@@ -3,12 +3,17 @@ function aboutMargin(event){
   var bHeight = $('.blurb').height();
   var aHeight = $('.about').height(); // ??
 
-  if(bHeight > aHeight){
+  if (aHeight == bHeight){
+    $('.about').css('padding-top', '0');
+    $('.blurb').css('padding-top', '0');
+  }
+  else if(bHeight > aHeight){
     $('.blurb').css('padding-top', '0');
     $('.about').css('padding-top', (bHeight - aHeight)/2 + 'px');
-  } else if (aHeight > bHeight){
-    $('.about').css('padding-top', '0');    
+  } else{
+    $('.about').css('padding-top', '0');        
     $('.blurb').css('padding-top', (aHeight - bHeight)/2 + 'px');
+
   }
 
   var maxHeight;
@@ -25,7 +30,7 @@ function aboutMargin(event){
 $('#projects .tiles .tile').click(function(e) {
   e.preventDefault(); 
   var slug = this.id;
-  $('body').fadeOut(1500, newpage(slug));
+  $('body').fadeOut(2000, newpage(slug));
 });
 
 function newpage(slug) {
@@ -35,14 +40,14 @@ function newpage(slug) {
 
 $(document).on('ready', function(){
 
+  aboutMargin();
+  $(window).on('resize', aboutMargin);
+
   $('.arrow').find('a').click(scrollToSection);
 
   // do fading 5 times
   for(i=0;i<5;i++) {
     $(".arrow").fadeTo('slow', 0.2).fadeTo('slow', 1.0);
   }
-
-  aboutMargin();
-  $(window).on('resize', aboutMargin);
 
 });

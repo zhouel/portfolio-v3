@@ -23,11 +23,12 @@ function onScroll(event){
     });
 }
 
+  $('body').css('display', 'none');
+  $('body').fadeIn(2000);
+
 $(document).on('ready', function(){
 
   $('nav a').click(scrollToSection);
   $(document).on('scroll', onScroll);
-  $('body').css('display', 'none');
-  $('body').fadeIn(1500);
 
 });

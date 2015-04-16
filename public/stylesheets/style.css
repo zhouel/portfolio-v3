@@ -82,7 +82,7 @@ blockquote p { display: inline; }
 
 .no-margin { margin: 0; }
 
-ul.centered-list { margin-left: 0; margin-top: 0.75rem; list-style-type: none; text-align: center; }
+ul.centered-list { margin-left: 0; margin-top: 0.5rem; list-style-type: none; text-align: center; }
 ul.centered-list li { display: block; margin: 0 10px; }
 ul.centered-list li p { margin-bottom: 0.25rem; }
 
@@ -112,7 +112,7 @@ hr.indent { display: inline-block; width: 1.5em; height: 0px; margin: 5px 0 5px 
 
 .minor .more-triangle i { padding-top: 40px; margin-left: -30px; }
 
-.bio-img { max-height: 250px; }
+.bio-img { height: 230px; }
 
 ul.tiles { list-style: none; margin-left: 0px; }
 
@@ -246,9 +246,12 @@ nav a.current { background: #fff; }
 
 .back a { background-color: transparent; color: #aaa; line-height: 12px; padding: 10px 0 20px; }
 
-.nav-roundslide h1 { position: absolute; top: 0; margin: 0; color: #1c1c1c; text-transform: uppercase; white-space: nowrap; letter-spacing: 1px; font-weight: 400; font-size: 0.75em; line-height: 2.7em; display: none; -webkit-transition: display 0.3s, -webkit-transform 0.3s; transition: display 0.3s, transform 0.3s; }
+.nav-roundslide h1 { position: absolute; top: 0; margin: 0; color: #1c1c1c; text-transform: uppercase; white-space: nowrap; letter-spacing: 1px; font-weight: 400; font-size: 0.75rem; line-height: 2.7em; display: none; -webkit-transition: display 0.3s, -webkit-transform 0.3s; transition: display 0.3s, transform 0.3s; }
 
 .nav-roundslide a h1 { line-height: 30px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.nav-roundslide .back a { padding: 10px 0 20px 10px; background: #fff; box-shadow: 0px 1px 1px 0px #696969; width: 130px; }
+.nav-roundslide .back a h1 { display: inline; }
 
 .nav-roundslide .back a:hover { padding: 10px 0 20px 5px; }
 
